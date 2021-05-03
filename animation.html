@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+​
+<head>
+    <title></title>
+    <style type="text/css">
+    #blob {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        border-radius: 50%;
+        animation-name: drop;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+​
+        z-index: 1;
+    }
+​
+    @keyframes drop {
+​
+        0% {
+            top: 0px;
+            height: 100px;
+            width: 100px;
+        }
+​
+        50% {
+            top: 550px;
+            background-color: orange;
+​
+        }
+​
+        100% {
+            top: 0px background-color:lightgreen;
+            height: 150px;
+            width: 150px;
+        }
+​
+​
+​
+​
+    }
+​
+    #smallblob {
+        z-index: -1;
+        width: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 600px;
+​
+        height: 20px;
+        background-color: lightgreen;
+        animation-iteration-count: infinite;
+​
+        animation-name: disappear;
+        animation-duration: 3s;
+    }
+​
+    @keyframes disappear {
+        0% {
+​
+​
+            opacity: 1;
+        }
+​
+        49% {
+​
+​
+            opacity: 1;
+        }
+​
+​
+        50% {
+​
+            opacity: 0;
+        }
+​
+        99% {
+​
+            opacity: 0;
+        }
+​
+        100% {
+​
+            opacity: 1;
+        }
+    }
+    </style>
+</head>
+​
+<body>
+    <div id="blob"></div>
+    <div id="smallblob"></div>
+</body>
+​</html>

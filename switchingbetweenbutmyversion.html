@@ -1,0 +1,25 @@
+<html>
+<head>
+
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("image").src == "https://wanderzestblog.com/wp-content/uploads/2020/07/cannoli-small-8-scaled.jpg") 
+        {
+            document.getElementById("image").src = "https://wanderzestblog.com/wp-content/uploads/2020/07/cannoli-small-8-scaled.jpg";
+        }
+        else   (document.getElementById("image").src == "https://mamalovestocook.com/wp-content/uploads/2020/05/boiled-dumplings.jpg") 
+        {
+            document.getElementById("image").src = "https://mamalovestocook.com/wp-content/uploads/2020/05/boiled-dumplings.jpg";
+        }
+		
+
+    }
+</script>
+</head>
+<body>
+<img id="image" src="1.jpg" ><br><br></img>
+<button id="clickme" onclick="changeImage();"> click to change </button>
+
+</body>
+</html>
